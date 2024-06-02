@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // 2001210289 - Huỳnh Công Huy - Bài 40
+        maven { url "https://jitpack.io" }
+    }
+}
+
+rootProject.name = "AppBanHangOnl"
+include ':app'
